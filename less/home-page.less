@@ -1,7 +1,9 @@
 // Home Content
 
 .home {
-
+  @media @phone{
+    max-width:500px; 
+  }
   .intro {
 
     h2 {
@@ -19,11 +21,14 @@
     flex-wrap: wrap;
     width: 100%;
 
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      
     }
   }
 
@@ -57,7 +62,15 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      // .btn {
+      //   .button(11rem, auto); 
+
+        :hover {
+         
+            background-color: #F1F1F1;
+            color: #23293B; 
+          }
+        }
       }
     }
 
@@ -71,5 +84,78 @@
         border-radius: 10px;
       }
     }
+  
+// home
+
+.home{
+  .titleimg{
+    border-radius: 10px;
+    @media @phone{
+      width:100%; 
+    }
+
+    
   }
-}// home
+}
+
+.btn {
+  .button(#23293B , #F1F1F1, 11rem, 4rem); 
+  @media @phone{
+    .button(#23293B, #f1f1f1, 100%, 6rem);
+    padding-top: 2rem;
+  }
+}
+  .btn:hover {
+   
+      background-color: #F1F1F1;
+      color: #23293B; 
+  }
+  .sky{
+    @media @phone{
+      display:none; 
+    }
+  }
+  .launch{
+    @media @phone{
+      display:none; 
+    }
+  }
+  .home{
+    .space-images{
+      
+        .blast{
+          @media @phone{
+            width:100%; 
+          }
+
+      }
+    }
+  }
+
+  .home{
+    .walk{
+      @media @phone{
+        flex-direction: column-reverse; 
+        padding:1rem; 
+        margin-top:0; 
+      }
+      .walk-img{
+        @media @phone{
+          width:100%; 
+          margin-left:0; 
+        }
+      }
+    }
+  }
+  .home{
+    .walk{
+      .walk-text{
+        @media @phone{
+          width:100%; 
+          margin-top:2rem; 
+        }
+      }
+    }
+  }
+
+  
