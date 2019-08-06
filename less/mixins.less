@@ -1,1 +1,32 @@
 // Mixins Here
+
+.titledesktop(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// .button1(@width, @height){
+//     font-size: 2rem;
+    
+//     padding: 1rem;
+//     width: @width;
+//     border-radius: 10px;
+//     text-align: center;
+//     height: @height;  
+// }
+.margin(){
+    margin-top:2rem; 
+    margin-left:2rem; 
+    margin-right:2rem; 
+}
+
+.button(@background-color, @color, @width, @height){
+    font-size: 2rem;
+    background-color: @background-color;
+    color: @color; 
+    padding: 1rem;
+    width: @width;
+    border-radius: 10px;
+    text-align: center;
+    height: @height;  
+}
